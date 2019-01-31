@@ -1,25 +1,28 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import List from './List';
+
+const commaToArray = str => str.split(',');
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const itemsCommaSeparated = urlParams.get('list') || '';
+    const items = commaToArray(itemsCommaSeparated);
+
+    this.state = {
+      items
+    };
+  }
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div className="container">
+        <div className="list">
+          <List title="dc devs" items={this.state.items} />
+        </div>
       </div>
     );
   }
