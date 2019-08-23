@@ -1,6 +1,6 @@
 {
   "name": "standup",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
