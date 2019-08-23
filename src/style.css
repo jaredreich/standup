@@ -55,12 +55,15 @@ button:hover {
 .list-item {
   background-color: #FFF;
   padding: 1.5em;
-  margin: 0.5em 0em;
   border: 2px solid #CCC;
   box-shadow: 3px 3px #AAA;
   color: #333;
   border-radius: 5px;
 }
+.list-item:not(:first-child) {
+  margin-top: 0.5rem;
+}
+
 .list-item-active {
   animation: blinker 1s linear infinite;
   background-color: #EACCEA;
@@ -80,6 +83,12 @@ button:hover {
 }
 .list-input:focus {
   outline: 0;
+}
+
+.notes {
+  margin-bottom: 1rem;
+  white-space: pre-line;
+  word-wrap: break-word;
 }
 
 .separator {

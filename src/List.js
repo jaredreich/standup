@@ -51,8 +51,9 @@ class SortableList extends Component {
               <ul
                 {...props}
                 style={{
+                  cursor: isDragged ? "grabbing" : "inherit",
+                  margin: 0,
                   padding: "0em 0em 1em 0em",
-                  cursor: isDragged ? "grabbing" : "inherit"
                 }}
               >
                 {children}
@@ -111,6 +112,9 @@ class SortableList extends Component {
         </div>
 
         <div className="column">
+
+          {this.props.notes && <div className="notes" dangerouslySetInnerHTML={{ __html: this.props.notes }} />}
+
           <button onClick={() => this.setState({ active: true })}>Start</button>
           <button onClick={() => this.setState({ active: false })}>Stop</button>
           <button onClick={() => this.setState({ items: this.props.items })}>Reset</button>

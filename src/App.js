@@ -9,19 +9,27 @@ class App extends Component {
     super(props);
 
     const urlParams = new URLSearchParams(window.location.search);
+    const notes = urlParams.get('notes') || '';
     const itemsCommaSeparated = urlParams.get('list') || '';
     const items = commaToArray(itemsCommaSeparated);
 
     this.state = {
-      items
+      items,
+      notes,
     };
   }
 
   render() {
+    const { items, notes } = this.state
+
     return (
       <div className="container">
         <div className="list">
-          <List title="dc devs" items={this.state.items} />
+          <List
+            title="dc devs"
+            items={items}
+            notes={notes}
+          />
         </div>
       </div>
     );
