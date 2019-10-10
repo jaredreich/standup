@@ -2,18 +2,19 @@
 
 ## Usage
 
-To preset list items, append the url with a query string parameter "list". You can also prepend a list item with "-" to get a separator/title.
+Query string params:
 
-To preset notes, append the url with a query string parameter "notes" (it can be plain text or HTML)
-
-Values in both `list` and `notes` query parameters must be URL encoded.
+`list` → list items (may prepend list items with "-" to get a separator/title, must be URL encoded)
+`notes` → notes (plain text or HTML, must be URL encoded)
+`image` → set background image topic (image from unsplash.com, rotated daily)
+`color` → set active speaker background color (CSS color)
 
 When you're done, save it as a bookmark for next time!
 
 Basic example:
 
 ```
-?list=-group1,name1,name2,-group2,name3,name4&notes=Here%20are%20some%20notes.
+?list=-group1,name1,name2,-group2,name3,name4&notes=Here%20are%20some%20notes.&image=nature&color=pink
 ```
 
 Advanced example:

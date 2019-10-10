@@ -77,8 +77,9 @@ class SortableList extends Component {
                   }
                   style={{
                     ...props.style,
+                    boxShadow: isDragged ? "0 0 25px #555" : "",
+                    cursor: isDragged ? "grabbing" : "grab",
                     listStyleType: "none",
-                    cursor: isDragged ? "grabbing" : "grab"
                   }}
                 >
                   <div
