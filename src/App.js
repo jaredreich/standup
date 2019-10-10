@@ -43,7 +43,6 @@ class App extends Component {
             height: 100%;
             ${imageTopic ? `background-image: url("https://source.unsplash.com/daily?${imageTopic}");` : ''}
             background-position: center;
-            background-repeat: no-repeat;
             background-size: cover;
             margin: 0;
             padding: 0;
@@ -81,6 +80,7 @@ class App extends Component {
           }
 
           .column {
+            background-color: rgba(255, 255, 255, 0.5);
             padding: 10px;
             width: 300px;
           }
