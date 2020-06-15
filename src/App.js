@@ -21,6 +21,8 @@ class App extends Component {
       items,
       notes,
     };
+
+    window.onbeforeunload = () => 'Are you sure? Changes will not be saved.';
   }
 
   render() {

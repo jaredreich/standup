@@ -15,7 +15,6 @@ const XIcon = () => (
     strokeWidth="2"
     strokeLinecap="round"
     strokeLinejoin="round"
-    className="feather feather-x-circle"
   >
     <title>Remove</title>
     <circle cx="12" cy="12" r="10" />
@@ -89,9 +88,10 @@ class SortableList extends Component {
                       justifyContent: "space-between"
                     }}
                   >
-                    <div>{value}</div>
+                    <div style={{ wordBreak: 'break-word' }}>{value}</div>
                     <button
                       className="close-button"
+                      style={{ transform: 'translateX(10px)' }}
                       onClick={() => {
                         this.setState(prevProps => ({
                           items:
