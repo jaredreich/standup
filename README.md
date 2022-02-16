@@ -4,10 +4,10 @@
 
 Query string params:
 
-`list` → list items (may prepend list items with "-" to get a separator/title, must be URL encoded)
-`notes` → notes (plain text or HTML, must be URL encoded)
-`image` → set background image topic (image from unsplash.com, rotated daily)
-`color` → set active speaker background color (CSS color, hex or other, must be URL encoded)
+`list` → list items (may prepend list items with "-" to get a separator/title, must be URL encoded)\
+`notes` → notes (plain text or HTML, must be URL encoded)\
+`image` → set background image topic (image from unsplash.com, rotated daily)\
+`color` → set active speaker background color (CSS color, hex or other, must be URL encoded)\
 
 When you're done, save it as a bookmark for next time!
 
