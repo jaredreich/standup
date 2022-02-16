@@ -14,7 +14,7 @@ When you're done, save it as a bookmark for next time!
 Basic example:
 
 ```
-?list=-group1,name1,name2,-group2,name3,name4&notes=Here%20are%20some%20notes.&image=nature&color=pink
+?list=name1,name2,name3,name4&notes=Here%20are%20some%20notes...&image=nature&color=pink
 ```
 
 Advanced example:
